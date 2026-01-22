@@ -1,0 +1,50 @@
+project:
+  name: "Agentic Ad Generator"
+  version: "1.0.0"
+
+agents:
+  orchestrator:
+    model: "claude-sonnet-4-5-20250929"
+    max_retries: 3
+  
+  creative_director:
+    model: "claude-sonnet-4-5-20250929"
+    temperature: 0.7
+  
+  script_analyzer:
+    model: "claude-sonnet-4-5-20250929"
+    temperature: 0.3
+  
+  visual_designer:
+    model: "claude-sonnet-4-5-20250929"
+    temperature: 0.5
+  
+  audio_producer:
+    model: "claude-sonnet-4-5-20250929"
+    voice_provider: "elevenlabs"
+    default_voice: "professional"
+  
+  video_editor:
+    model: "claude-sonnet-4-5-20250929"
+    output_format: "mp4"
+    fps: 30
+  
+  qa_agent:
+    model: "claude-sonnet-4-5-20250929"
+    quality_threshold: 0.8
+
+video:
+  default_duration: 30
+  max_duration: 60
+  resolution: "1920x1080"
+  fps: 30
+  transitions:
+    - "fade"
+    - "crossfade"
+    - "slide"
+  
+audio:
+  music_volume: 0.3
+  voice_volume: 1.0
+  sample_rate: 44100
+
